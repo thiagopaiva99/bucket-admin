@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="theme-color", content="#21B3AC")
+        title Bucket Admin
+
+        link(href="https://fonts.googleapis.com/css?family=Ubuntu:400,700", rel="stylesheet")
+        link(rel="stylesheet", href="app.css")
+    body
+        aside.menu
+            section.menu-header
+                span.menu-logo
+                    i.fa.fa-bitbucket
+                a.menu-title 
+                    | Bucket Admin
+            ul.menu-itens
+                li.menu-item.active
+                    a(href="#") 
+                        i(class="fa fa-dashboard")
+                        | Dashboard
+                li.menu-item
+                    a(href="#") 
+                        i(class="fa fa-laptop")
+                        | Layout
+                li.menu-item                        
+                    a(href="#") 
+                        i(class="fa fa-book")
+                        | Ui Elements
+                li.menu-item
+                    a(href="#") 
+                        i(class="fa fa-envelope-o")
+                        | Mail
+
+        nav.search
+            input(type="text", placeholder="Search anything...")
+
+        nav.header
+            section.header-notifications
+                ul.header-notifications-list
+                    li.header-notification-item.header-hide-menu.js-open-sidebar
+                        i.fa.fa-bars
+                    li.header-notification-item
+                        i.fa.fa-credit-card
+                    li.header-notification-item
+                        i.fa.fa-envelope-o
+                    li.header-notification-item
+                        i.fa.fa-bell-o
+            section.header-profile
+                ul.header-profile-list
+                    li.header-profile-item.header-profile-item-search
+                        i.fa.fa-search                        
+                    li.header-profile-item
+                        i.fa.fa-user
+
+        script(src="https://use.fontawesome.com/a402c200f1.js")
+        script(src="app.js")

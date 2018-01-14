@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.menu {
+  width: 70%;
+  height: 100%;
+  max-width: 20%;
+  position: fixed;
+  left: -80%;
+  top: 0;
+  background: #33333B;
+  z-index: 1001;
+  transition: left .3s; }
+  .menu .menu-header {
+    background: #21B3AC;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .menu .menu-header .menu-logo {
+      font-size: 1.5em;
+      margin-right: .7em; }
+      .menu .menu-header .menu-logo i {
+        color: #70D5CF; }
+    .menu .menu-header .menu-title {
+      color: #B5F6F6;
+      text-transform: uppercase;
+      font-weight: bold; }
+  .menu .menu-itens .menu-item {
+    width: calc(100% - 50px);
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .menu .menu-itens .menu-item a {
+      text-decoration: none;
+      color: #85858D; }
+      .menu .menu-itens .menu-item a i {
+        margin-right: 10px; }
+    .menu .menu-itens .menu-item:hover {
+      background: #2e2d33;
+      cursor: pointer; }
+      .menu .menu-itens .menu-item:hover a {
+        color: #21B3AC; }
+    .menu .menu-itens .menu-item.active {
+      background: #29282E; }
+      .menu .menu-itens .menu-item.active a {
+        color: #21B3AC;
+        font-weight: 600; }
+  @media (min-width: 992px) {
+    .menu {
+      left: 0; } }
+
+.open-sidebar:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000; }
+
+.open-sidebar .menu {
+  max-width: 300px;
+  left: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header .header-notifications .header-notifications-list {
+    display: flex;
+    align-items: center; }
+    .header .header-notifications .header-notifications-list .header-notification-item {
+      margin-left: 20px;
+      cursor: pointer;
+      color: #898989; }
+      .header .header-notifications .header-notifications-list .header-notification-item.header-hide-menu {
+        color: black;
+        background: #21B3AC;
+        padding: 10px;
+        border-radius: 50%; }
+        @media (min-width: 992px) {
+          .header .header-notifications .header-notifications-list .header-notification-item.header-hide-menu {
+            display: none; } }
+  .header .header-profile {
+    margin-right: 20px; }
+    .header .header-profile .header-profile-list {
+      display: flex; }
+      .header .header-profile .header-profile-list .header-profile-item {
+        color: #898989;
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer; }
+        .header .header-profile .header-profile-list .header-profile-item .header-profile-input-search {
+          display: none;
+          width: 0px;
+          margin-right: 10px;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid #898989; }
+  @media (min-width: 992px) {
+    .header {
+      left: 20%;
+      width: 80%; } }
+
+.search {
+  position: fixed;
+  top: -76px;
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1005;
+  transition: top .3s;
+  padding: 0 20px; }
+  .search input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: #848484;
+    height: 40px;
+    width: 96%;
+    font-size: 1.8em; }
+  .search.active {
+    top: 0; }
+  @media (min-width: 992px) {
+    .search {
+      left: 20%;
+      width: 80%; } }
+
+body {
+  background: #EEF1F8;
+  font-family: "Ubuntu", sans-serif; }
