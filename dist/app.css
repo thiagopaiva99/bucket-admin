@@ -223,6 +223,27 @@ table {
         .graphs .graph .graph-header .graph-list .graph-item {
           margin-right: 10px; }
 
+.infos {
+  display: flex; }
+  .infos .info {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #fafafa; }
+    .infos .info .info-header {
+      padding: 10px;
+      width: 100%;
+      background: #21B3AC;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px; }
+      .infos .info .info-header .infos {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+
 body {
   background: #EEF1F8;
   font-family: "Ubuntu", sans-serif; }

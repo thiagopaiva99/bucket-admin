@@ -1,14 +1,8 @@
 doctype html
-html(lang="en")
+html(lang="pt-br")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        meta(name="theme-color", content="#21B3AC")
-        title Bucket Admin
+        include _partials/head.pug
 
-        link(href="https://fonts.googleapis.com/css?family=Ubuntu:400,700", rel="stylesheet")
-        link(rel="stylesheet", href="app.css")
     body
         // including the menu block
         include _partials/menu.pug
@@ -57,12 +51,34 @@ html(lang="en")
             .infos
                 .info
                     .info-header
+                        .infos
+                            .info-date
+                                | January 2018
+                            .info-buttons
+                                .info-button-group
+                                    button Save
+                        .info-chart
 
                 .info
                     .info-header
+                        .infos
+                            .info-date
+                                | February 2018
+                            .info-buttons
+                                .info-button-group
+                                    button Save
+                        .info-chart
 
                 .info
-                    .info-header                        
+                    .info-header
+                        .infos
+                            .info-date
+                                | March 2018
+                            .info-buttons
+                                .info-button-group
+                                    button Save
+                        .info-chart
+                        
 
         script(src="https://use.fontawesome.com/a402c200f1.js")
         script(src="app.js")

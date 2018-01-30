@@ -1,0 +1,27 @@
+.infos {
+    display: flex;
+
+    .info {
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background: darken(white, 2);
+
+        .info-header {
+            padding: 10px;
+            width: 100%;
+            background: $green;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+
+            .infos {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
