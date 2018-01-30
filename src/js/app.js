@@ -13,4 +13,9 @@ $(function() {
     $('.header-profile-item-search').on('click', () => {
       $('.search').addClass('active')
     })
+
+    $('.menu-item').on('click', function(){
+      $('.menu-item').removeClass('active')
+      $(this).addClass('active')
+    })
 })

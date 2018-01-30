@@ -3,8 +3,18 @@
 @import "menu";
 @import "header";
 @import "search";
+@import "cards";
+@import "graphs";
 
 body {
     background: $body;
     font-family: $font;
+}
+
+.container {
+    position: absolute;
+    left: 20%;
+    top: 75px;
+    padding: 10px;
+    width: calc(100% - 20% - 20px);
 }

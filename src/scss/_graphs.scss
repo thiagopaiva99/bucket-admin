@@ -1,0 +1,33 @@
+.graphs {
+    display: flex;
+    margin: 10px;
+    width: 95%;
+
+    .graph {
+        width: 100%; 
+        /*display: flex;
+        flex-basis: 2/3;*/
+
+        .graph-header {
+            background: darken(white, 2);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: #ccc;
+
+            .graph-title {
+                text-transform: uppercase;
+            }
+
+            .graph-list {
+                display: flex;
+
+                .graph-item {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

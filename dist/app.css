@@ -184,6 +184,52 @@ table {
       left: 20%;
       width: 80%; } }
 
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .cards .card {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 3px; }
+    .cards .card .card-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ddd; }
+
+.graphs {
+  display: flex;
+  margin: 10px;
+  width: 95%; }
+  .graphs .graph {
+    width: 100%;
+    /*display: flex;
+        flex-basis: 2/3;*/ }
+    .graphs .graph .graph-header {
+      background: #fafafa;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      color: #ccc; }
+      .graphs .graph .graph-header .graph-title {
+        text-transform: uppercase; }
+      .graphs .graph .graph-header .graph-list {
+        display: flex; }
+        .graphs .graph .graph-header .graph-list .graph-item {
+          margin-right: 10px; }
+
 body {
   background: #EEF1F8;
   font-family: "Ubuntu", sans-serif; }
+
+.container {
+  position: absolute;
+  left: 20%;
+  top: 75px;
+  padding: 10px;
+  width: calc(100% - 20% - 20px); }
