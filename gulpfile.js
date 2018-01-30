@@ -37,7 +37,7 @@ gulp.task("js", ['cache:js'], () =>
         .pipe(browserSync.stream()))
 
 gulp.task('pug', () => 
-  gulp.src('./src/views/*.pug')
+  gulp.src('./src/views/**/*.pug')
       .pipe(pug())
       .pipe(gulp.dest('./dist'))
       .pipe(browserSync.stream()))

@@ -1,4 +1,5 @@
 @import "reset";
+@import "remove-graph";
 @import "variables";
 @import "menu";
 @import "header";
@@ -18,4 +19,8 @@ body {
     top: 75px;
     padding: 10px;
     width: calc(100% - 20% - 20px);
+}
+
+canvas {
+    padding: 20px 0 20px 0;
 }

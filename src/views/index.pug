@@ -50,7 +50,7 @@ html(lang="pt-br")
 
             .infos
                 .info
-                    .info-header
+                    .info-header.green
                         .infos
                             .info-date
                                 | January 2018
@@ -58,9 +58,10 @@ html(lang="pt-br")
                                 .info-button-group
                                     button Save
                         .info-chart
+                            canvas(id="info-chart-green", height="50")
 
                 .info
-                    .info-header
+                    .info-header.red
                         .infos
                             .info-date
                                 | February 2018
@@ -68,9 +69,10 @@ html(lang="pt-br")
                                 .info-button-group
                                     button Save
                         .info-chart
+                            canvas(id="info-chart-red", height="50")
 
                 .info
-                    .info-header
+                    .info-header.yellow
                         .infos
                             .info-date
                                 | March 2018
@@ -78,7 +80,9 @@ html(lang="pt-br")
                                 .info-button-group
                                     button Save
                         .info-chart
+                            canvas(id="info-chart-yellow", height="50")
                         
 
         script(src="https://use.fontawesome.com/a402c200f1.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js",)
         script(src="app.js")
